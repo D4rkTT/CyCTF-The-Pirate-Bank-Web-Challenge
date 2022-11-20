@@ -1,4 +1,4 @@
-# CyCTF The Priate Bank Web Challenge (400 Point - Hard)
+# CyCTF The Pirate Bank Web Challenge (400 Point - Hard)
 the challenge gave us some of its source code so we can review it, after some code review we had a simple bank web application that allow us to transfer balance between accounts and if i have more than 1,000,000$, i will be VIP then access another feature called "complain" that allow us to upload files.
 
 first we need to get 1 million in balance to be vip to access complain page.
