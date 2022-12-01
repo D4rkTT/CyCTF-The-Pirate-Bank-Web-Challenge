@@ -32,7 +32,7 @@ $query = "SELECT * FROM `transactions` where from_account=$id or to_account=$id 
 ```
 Now we have sql injection but wait a min. we have very limited injection options as our injected code come after `order by`, i tried a lot of options but finally i got an idea to exploit it using `LIMIT` option.
 
-We will guess the users passwords by showing transtions count equal to ascii code of the char. in every password chars. with this query 
+We will guess the users passwords by showing transactions count equal to ascii code of the char. in every password chars. with this query 
 
 ```sql
 limit (SELECT unicode(substr(password,1,1)) FROM users where id=1)
