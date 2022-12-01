@@ -22,7 +22,7 @@ function  filter_order($order)
   }
 }
 ```
-But the app don't check for `filter_order()` result, so we can easly set  `$order` to any value.
+But the app doesn't check for `filter_order()` result, so we can easly set  `$order` to any value.
 
 ## Exploit
 Next stage is loading transaction of the user with function `get_transactions()` with 2 params. `$_SESSION['username']` and `$order` but wait the function pass the `$order` to sql query without any filter :D
